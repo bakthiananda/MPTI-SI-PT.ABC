@@ -1,0 +1,30 @@
+{
+  "name": "mpti-si-pt.abc",
+  "version": "0.0.1",
+  "description": "Sistem Informasi PT. ABC untuk kelas MPTI 2026",
+  "main": "src/app.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bakthiananda/MPTI-SI-PT.ABC.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bakthiananda/MPTI-SI-PT.ABC/issues"
+  },
+  "homepage": "https://github.com/bakthiananda/MPTI-SI-PT.ABC#readme",
+  "dependencies": {
+    "dotenv": "^18.0.9",
+    "drizzle-orm": "^1.0.0-rc.5",
+    "express": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.6.6",
+    "drizzle-kit": "^1.0.0-rc.5",
+    "typescript": "^7.0.2"
+  }
+}
