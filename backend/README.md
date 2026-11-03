@@ -1,23 +1,24 @@
 # FILE BACKEND DISINI
 
-Backend files for MPTI-SI-PT.ABC, backend and database live on the same machine
-so uses sqlite for simplicity and reduced overhead.
+File backend untuk Sistem Informasi PT. ABC, server backend dan database akan
+berada pada mesin yang sama, jadi kita gunakan saja `SQLite` agar sederhana.
 
 ## Project Details
 
 ### Frameworks / Libraries
-- Express.JS
+- ExpressJS
 - Drizzle ORM
 
 ### Development Setup
-To get dev tools, run:
+Untuk menginstal alat untuk development lokal, jalankan pada folder `backend`:
 ```sh
 npm install
 ```
 
 ### Database Migration System
-Use drizzle's codebase first approach while generating migration files, see:
-[option 3](https://orm.drizzle.team/docs/sqlite/migrations)
-+ Change `src/db/schema.ts` to reflect new project schema
-+ Run `npx drizzle-kit generate` to make migration files
-+ If the migration looks correct, run `npx drizzle-kit migrate`
+Untuk merubah schema database, gunakan pendekatan "codebase first" dari
+drizzle, lihat [opsi 3](https://orm.drizzle.team/docs/sqlite/migrations) untuk
+penjelasan,
++ Ubah `src/db/schema.ts` untuk mencerminkan schema proyek yang terbaru
++ Jalankan `npx drizzle-kit generate` untuk membuat file migrasi
++ Jika migrasi tepat, jalankan `npx drizzle-kit migrate`
